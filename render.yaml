@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: scrapin-occ-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: LOCATIONIQ_API_KEY
+        sync: false  # Este será configurado manualmente en Render
+    scaling:
+      minInstances: 1
+      maxInstances: 3

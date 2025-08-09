@@ -1,0 +1,12 @@
+node_modules/
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+resultados.json
+resultados.csv
+resultados.xlsx
+resultados.pdf
+.DS_Store
